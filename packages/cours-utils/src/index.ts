@@ -52,3 +52,6 @@ export function filterCours(
 export function sortBySession(cours: Cours[]): Cours[] {
   return [...cours].sort((a, b) => a.session - b.session);
 }
+export function formatLevel(level: Level): string {
+  return LEVEL_LABELS[level];
+}
